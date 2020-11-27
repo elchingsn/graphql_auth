@@ -27,7 +27,7 @@ DEFAULTS = {
     # required fields on register, plus password1 and password2,
     # can be a dict like UPDATE_MUTATION_FIELDS setting
     "REGISTER_MUTATION_FIELDS": ["email", "username","role"],
-    "REGISTER_MUTATION_FIELDS_OPTIONAL": [],
+    "REGISTER_MUTATION_FIELDS_OPTIONAL": ["key"],
     # optional fields on update account, can be list of fields
     "UPDATE_MUTATION_FIELDS": {"first_name": "String", "last_name": "String"},
     # tokens
