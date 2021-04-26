@@ -22,12 +22,12 @@ DEFAULTS = {
     # the register mutation will return a token
     "ALLOW_LOGIN_NOT_VERIFIED": True,
     # mutations fields options
-    "LOGIN_ALLOWED_FIELDS": ["email", "username","mobile"],
+    "LOGIN_ALLOWED_FIELDS": ["email","username","mobile"],
     "ALLOW_LOGIN_WITH_SECONDARY_EMAIL": True,
     # required fields on register, plus password1 and password2,
     # can be a dict like UPDATE_MUTATION_FIELDS setting
     "REGISTER_MUTATION_FIELDS": ["email", "username","role"],
-    "REGISTER_MUTATION_FIELDS_OPTIONAL": ["key","mobile"],
+    "REGISTER_MUTATION_FIELDS_OPTIONAL": ["key","mobile","name"],
     # optional fields on update account, can be list of fields
     "UPDATE_MUTATION_FIELDS": {"first_name": "String", "last_name": "String"},
     # tokens
